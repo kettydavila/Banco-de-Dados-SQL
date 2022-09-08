@@ -1,0 +1,24 @@
+- Apresentação Inicial;
+- Cenário de dados;
+	Papel do Cientista de dados = Tratar os dados para torna-los úteis, persistidos e confiáveis.
+	SGBD = Segurança no acesso aos dados.
+	Tipo de dados = Int, Char.
+	Paradigma do Big Data = 3* Variedade, Velocidade e Volume.
+- O que são Banco de Dados;
+	Banco de dados é diferente de SGBD, não são sinonimos.
+	Dados são relacionados a um determinado fato que transmitem um significado.
+	API pega a requisiçao e devolve a resposta.
+	SGBD = DBMS.
+- Sistema de Gerenciamento de Banco de Dados;
+	Definição - Tipo de dados, estrutura, constrains.
+	Construção - Inserção de dados, apersistencia desses dados, mapeamento.
+	Manipulação - Recuperação, Relatórios, Query.
+	Compartilhamento - Simultaneidade, Acesso, gerenciamento dos acessos.
+	Proteção - Acesso, mal funcionamento.
+	Ciclo de vida longo.
+	Metadados = Informações concisas sobre os dados contidos no Banco de dados.
+	Compartilhamento - Por padrão o BD realiza o bloqueio e a liberação as tabelas.
+
+
+
+
