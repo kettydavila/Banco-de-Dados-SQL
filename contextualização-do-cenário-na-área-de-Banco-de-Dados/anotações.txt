@@ -5,20 +5,68 @@
 	Tipo de dados = Int, Char.
 	Paradigma do Big Data = 3* Variedade, Velocidade e Volume.
 - O que são Banco de Dados;
-	Banco de dados é diferente de SGBD, não são sinonimos.
+	Banco de dados é diferente de SGBD, não são sinônimos.
 	Dados são relacionados a um determinado fato que transmitem um significado.
-	API pega a requisiçao e devolve a resposta.
+	API pega a requisição e devolve a resposta.
 	SGBD = DBMS.
 - Sistema de Gerenciamento de Banco de Dados;
 	Definição - Tipo de dados, estrutura, constrains.
-	Construção - Inserção de dados, apersistencia desses dados, mapeamento.
+	Construção - Inserção de dados, a persistência desses dados, mapeamento.
 	Manipulação - Recuperação, Relatórios, Query.
 	Compartilhamento - Simultaneidade, Acesso, gerenciamento dos acessos.
 	Proteção - Acesso, mal funcionamento.
 	Ciclo de vida longo.
 	Metadados = Informações concisas sobre os dados contidos no Banco de dados.
 	Compartilhamento - Por padrão o BD realiza o bloqueio e a liberação as tabelas.
-
-
-
-
+- Breve Histórico do SGBD:
+	1960 - Conceito foi criado de BD;
+	1970 - Sistema R, mas também surgiu um artigo sobre calculo e álgebra relacional por Ted Codd que definia a estrutura de modelo relacional;
+	1970 - Surgiu a ideia de BD relacional;
+	1976 - 1º SGDB pela Honeywell;
+	1980 - Micro pcs	
+	1980 - Oracle 2;
+	1983 - IBM SQL/ DS e Oracle 3;
+	1990 - POO, programação orientada a objetos
+	2000 - NoSQL
+	De 80 pra cá saímos de 8MB para TeraBytes em capacidade de armazenamento.
+	Modelo hierárquico - COBOL, BDDBASE, CLIPPER, FOX PRO;
+	Modelo em Rede - Links, ponteiros entre nós surgiu em 1964, quem opera precisa ter conhecimento da estrutura física do BD. O relacionamento é N:M.
+- Modelo de Banco de Dados Relacional:
+	Surgiu em 1970 por Ted Codd com o SQL que é baseado na teoria de conjuntos;
+	É baseado na álgebra relacional
+	O DBA = Define tabelas e constrains para dados; Comandos traduzidos pelo processador LDD (Linguagem de Definição de Dados).
+	LDD = SQL
+	Integração BD Relacional e Não Relacional = Repositórios centralizados com Data Warehouses e Mediadores Middlewares.
+- SGBD mais utilizados pelo mercado:
+	1 Oracle: utilizado por grandes corporações e governos. Inabalável posição dentro do mercado por sua segurança, manutenção e alta escalabilidade.
+	2 MySQL: Também é mantido pela Oracle mas é opensurce. Utilizado em aplicações web por ser leve, mas é muito versátil e tem integração com PHP.
+	3 SQLServer: Mantido pela Microsoft, plataforma mais abrangente é mais sofisticado e tem integração com BI. Característica para aplicações críticas.
+	4 PostgreSQL: Bastante robusto e consolidado, opensurce, integração PYTHON. 
+	5 MongoDB: NoSQL, armazena dados em blocos, detalhes são colocados dentro do objeto-documento-, esquema flexível, agrupamento simples. 
+	6 Redis: Orientado a chave e valor, NOSQL, armazena em memória, reduz time de resposta com alta performance.
+	7 ElasticSearch: Relatórios de Log de sistema, é um mecanismo de busca, trata e armazena os dados de forma centralizada. Descobri e desvenda algo não esperado. Muito associado a startups e grandes empresas relacionadas a informação. Com design simples e orientado a documentos. NoSQL e escalável.
+	8 Access: é simples executável em desktop com integração aos produtos office.
+	9 MariaDB: Um braço do MySQL, por isso não é necessária conversão. Não é opensurce. Método de busca e entrega mais avançados, bastante performance.
+	10 Cassandra: NoSQL, opensurce, baseado em colunas, para ambiente de gerenciamento em larga escala, provendo alta disponibilidade. Inicialmente desenvolvido pelo Facebook. Desde 2009 é mantido pela Apache. 
+	Prioridade para selecionar os SGBD: Popularidade; Tempo de mercado; Documentação; Características: Robustez, Confiabilidade, segurança, multiplataforma.
+- A era dos dados e o futuro da modelagem - 1ª Parte:
+	Papel central - Sistema corporativo: Modelo relacional é mais usado pelas empresas; Min/Max; Count; Média; Soma.
+	Researching: Mapeamento de DNA; Simulação de fármacos; Astronomia; Ciência de dados.
+	Poder computacional: Nº de tarefas; Quantidade de dados; Heterogeneidade; Computação paralela e distribuída.
+	Exemplo: Mapeamento de supernovas, galáxias e padrões = 6.6 TB por dia de dados.
+	1º Paradigma: Experimental, tentativa e erro para provar algo. As descobertas surgiam por acidente- ano 1600.
+	2º Paradigma: Teoria analítica, provando os teoremas escritos matematicamente - ano 1950.
+	3º Paradigma: Simulações computacionais, mapear ou simular alguma dinâmica - ano 2000.
+	4º paradigma: Data Tree Science, tornar os dados em informação util. Insights para suportar teorias com base em estatística e análise de dados. Modelagem de dados, tenho uma base com dados que posso extrair informações; Velocidade, Variedade e Volume - Agora.
+	Requisitos do 4º paradigma: Composição do problema, Execução da teoria, Análise, Abstração para que seja generalista, Reprodutividade por outra pessoa, Reutilização, Escalabilidade para volume maior de dados.
+- A era dos dados e o futuro da modelagem - 2º parte:
+	Experimentos em larga escala: Paralelismo => Múltiplos processadores operando concorrentemente com dados voláteis = processa mais não armazena; Big data => Processamento paralelo de dados persistentes e particionados; Clound => Recursos de terceiros- Soluções de tecnologia como serviço - exemplo aws e Azure.
+	High Performace Computing = HPC => Nós de processamentos; Sistemas de arquivos paralelos e sem persistencia; Modelos: MPI, OpenMP, OpenCL. Acesso: HFF5 e NetCDF.
+	Grande diferença entre HPC e Big Data = O Processamento é paralelo porem um persiste e outro não.
+- Novo cenário e novas tecnologias:
+	Data Carrie: Tech e em DATA; Data-driven; Novos modelos de SGBDs.
+	Mercado de dados: Engenheiro - desenho e sustentação das soluções dedados, Analista - Criação de dashboards, apresentação visual dos dados, Cientista - Modelagem, reconhecimento de padrões/ predição.
+	Data-driven: Analise de dados, interpretação = Analise, entenda e decida. Área estratégica = Gerenciamento e Marketing usam desta abordagem para focar no consumidor.
+	Modelos NoSQL: Documentos, Wide-columns, key-value, grafos, orientado à objetos. É geralmente distribuído tem alta performance e alto poder computacional com modelagem diferenciados.
+	Exemplo de NoSQL: MongoDB orientado a documentos; Cassandra orientado à colunas; Redis orientado à key-value(dicionário) escrito em C; Neo4j orientado à grafos em Cypher; DB4objects orientado À objetos.
+	DB e Clound - Amazon rds; DynamoDB; AzureBD; Amazon Aurora; Amazon Redshift; SQL.
